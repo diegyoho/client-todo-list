@@ -6,18 +6,42 @@ const todos = loadFromStorage()
 
 showList()
 
+// BASIC FUNCTIONS
+
+function addTodo(todo) {
+    todos.push(todo)
+    saveToStorage()
+    showList()
+}
+
+function removeTodo(id) {
+    todos.splice(id, 1)
+    saveToStorage()
+    showList()
+}
+
+// FRONT-END
+
 addTodoButton.addEventListener('click', () => {
     if(addTodoInput.value !== '') {
-        todos.push(addTodoInput.value)
+        addTodo(addTodoInput.value)
         addTodoInput.value = ''
-        showList(todos)
-        saveToStorage()
     }
 })
 
-function createItem(value) {
+function createListItem(value, id) {
     const li = document.createElement('li')
+    li.id = id
     li.innerText = value
+
+    const removeButton = document.createElement('button')
+    removeButton.innerText = 'X'
+
+    removeButton.addEventListener('click', () => {
+        removeTodo(id)
+    } )
+
+    li.appendChild(removeButton)
 
     return li
 }
@@ -25,8 +49,10 @@ function createItem(value) {
 function showList() {
     listElement.innerHTML = ''
 
-    todos.forEach(todo => listElement.appendChild(createItem(todo)))
+    todos.forEach((todo, index) => listElement.appendChild(createListItem(todo, index)))
 }
+
+// PERSISTENCE
 
 function loadFromStorage() {
     const data = localStorage.getItem('todo-list') || '[]'

@@ -19,7 +19,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 <div align="center">
   <div>Desenvolvido por 🤘 Diego Moreira</div>
-
+  <br>
   <a href="https://github.com/diegyohoho/" >
     <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=github">
   </a>
