@@ -9,13 +9,22 @@ showList()
 // BASIC FUNCTIONS
 
 function addTodo(todo) {
-    todos.push(todo)
+    todos.push({
+        todo,
+        completed: false
+    })
     saveToStorage()
     showList()
 }
 
 function removeTodo(id) {
     todos.splice(id, 1)
+    saveToStorage()
+    showList()
+}
+
+function completeTodo(id, completed) {
+    todos[id].completed = completed
     saveToStorage()
     showList()
 }
@@ -29,11 +38,24 @@ addTodoButton.addEventListener('click', () => {
     }
 })
 
-function createListItem(value, id) {
+function createListItem(todo, id) {
     const li = document.createElement('li')
     li.id = id
-    li.innerText = value
 
+    const p = document.createElement('p')
+    p.innerText = todo.todo
+    
+    li.appendChild(createCompleteButton(id, todo.completed))
+    li.appendChild(p)
+    li.appendChild(createRemoveButton(id))
+
+    if(todo.completed)
+        li.classList.add('completed')
+
+    return li
+}
+
+function createRemoveButton(id) {
     const removeButton = document.createElement('button')
     removeButton.classList.add('delete')
     removeButton.innerHTML = '<i class="material-icons">close</i>'
@@ -42,9 +64,18 @@ function createListItem(value, id) {
         removeTodo(id)
     } )
 
-    li.appendChild(removeButton)
+    return removeButton
+}
 
-    return li
+function createCompleteButton(id, completed) {
+    const completeButton = document.createElement('input')
+    completeButton.type = 'checkbox'
+    completeButton.checked = completed
+    completeButton.addEventListener('click', event => {
+        completeTodo(id, !completed)
+    } )
+
+    return completeButton
 }
 
 function showList() {

@@ -5,6 +5,14 @@ O principal objetivo com este projeto é treinar e demonstrar os conhecimentos c
 
 [Acesse Aqui](https://diegyohoho.github.io/client-todo-list/)
 
+<div align="center">
+
+![Preview](previews/preview.gif)
+
+</div>
+
+
+
 ## Linguagens
 
   - Javascript

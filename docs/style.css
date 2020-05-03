@@ -57,7 +57,8 @@ main.container {
 #new-todo input {
     width: 100%;
     padding: 8px 12px;
-
+    margin-right: 8px;
+    
     border: 1px solid #cecece;
     border-radius: 4px;
 }
@@ -68,7 +69,6 @@ main.container {
     height: 32px;
 
     padding: 8px;
-    margin-left: 8px;
 
     background-color: #339e57;
     color: white;
@@ -85,6 +85,14 @@ main.container {
     transition: background-color 200ms;
 }
 
+#todos ul li input[type="checkbox"] {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+#todos ul li button:hover,
 #new-todo button:hover {
     background-color: #14c24e;
 }
@@ -117,6 +125,16 @@ main.container {
 
 #todos ul li button.delete:hover {
     background-color: #ff5c5c;
+}
+
+#todos ul li p {
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+#todos ul li.completed p {
+    color: #ccc;
+    text-decoration: line-through;
 }
 
 footer {
