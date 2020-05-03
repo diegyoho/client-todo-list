@@ -14,11 +14,14 @@ O principal objetivo com este projeto é treinar e demonstrar os conhecimentos c
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
 ---
-Desenvolvido por 🤘 Diego Moreira
 
-<a href="https://github.com/diegyohoho/" >
-  <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=github">
-</a>
-<a href="https://www.linkedin.com/in/diegyohoho/" >
-  <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=linkedin">
-</a>
+<div align="center">
+  Desenvolvido por 🤘 Diego Moreira
+
+  <a href="https://github.com/diegyohoho/" >
+    <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=github">
+  </a>
+  <a href="https://www.linkedin.com/in/diegyohoho/" >
+    <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=linkedin">
+  </a>
+</div>
