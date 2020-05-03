@@ -4,10 +4,15 @@ Implementação de uma aplicação de Todo List sem integração com servidor, c
 O principal objetivo com este projeto é treinar e demonstrar os conhecimentos com as linguagens utilizadas.
 
 ## Linguagens
+
   - Javascript
   - HTML
   - CSS
-  
+
+## Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+
 ---
 Desenvolvido por 🤘 Diego Moreira
 
@@ -16,7 +21,4 @@ Desenvolvido por 🤘 Diego Moreira
 </a>
 <a href="https://www.linkedin.com/in/diegyohoho/" >
   <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=linkedin">
-</a>
-<a href="https://twitter.com/diegyohoho" >
-  <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=twitter">
 </a>
