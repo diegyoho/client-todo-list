@@ -5,7 +5,7 @@ O principal objetivo com este projeto é treinar e demonstrar os conhecimentos c
 
 [Acesse Aqui](https://diegyohoho.github.io/client-todo-list/)
 
-<div align="center">
+<div align="center" width="320px">
 
 ![Preview](previews/preview.gif)
 
