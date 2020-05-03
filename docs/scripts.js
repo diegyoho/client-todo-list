@@ -35,7 +35,8 @@ function createListItem(value, id) {
     li.innerText = value
 
     const removeButton = document.createElement('button')
-    removeButton.innerText = 'X'
+    removeButton.classList.add('delete')
+    removeButton.innerHTML = '<i class="material-icons">close</i>'
 
     removeButton.addEventListener('click', () => {
         removeTodo(id)
@@ -47,6 +48,11 @@ function createListItem(value, id) {
 }
 
 function showList() {
+    if(todos.length === 0) {
+        listElement.innerHTML = 'Add some todos!'
+        return
+    }
+    
     listElement.innerHTML = ''
 
     todos.forEach((todo, index) => listElement.appendChild(createListItem(todo, index)))
